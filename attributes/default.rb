@@ -15,5 +15,5 @@ set['logstash']['instance']['default']['plugins_source_url']     = 'https://down
 set['logstash']['instance']['default']['plugins_checksum']       = '7497ca3614ba9122159692cc6e60ffc968219047e88de97ecc47c2bf117ba4e5'
 
 default['logstash']['instance']['default']['pattern_templates_cookbook']  = 'opsworks_logstash'
-default['logstash']['instance']['default']['pattern_templates']           = { "default": "patterns/custom_patterns.erb" }
+default['logstash']['instance']['default']['pattern_templates']           = { "default" => "patterns/custom_patterns.erb" }
 default['logstash']['instance']['default']['pattern_templates_variables'] = {}
