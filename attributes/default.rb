@@ -14,6 +14,6 @@ set['logstash']['instance']['default']['plugins_version']        = '1.4.2'
 set['logstash']['instance']['default']['plugins_source_url']     = 'https://download.elasticsearch.org/logstash/logstash/logstash-contrib-1.4.2.tar.gz'
 set['logstash']['instance']['default']['plugins_checksum']       = '7497ca3614ba9122159692cc6e60ffc968219047e88de97ecc47c2bf117ba4e5'
 
-default['logstash']['instance']['default']['pattern_templates_cookbook']  = 'opsworks_logstash'
-default['logstash']['instance']['default']['pattern_templates']           = { "server" => "patterns/custom_patterns.erb" }
-default['logstash']['instance']['default']['pattern_templates_variables'] = {}
+set['logstash']['instance']['server']['pattern_templates_cookbook']  = 'opsworks_logstash'
+set['logstash']['instance']['server']['pattern_templates']           = { "server" => "patterns/custom_patterns.erb" }
+set['logstash']['instance']['server']['pattern_templates_variables'] = {}
